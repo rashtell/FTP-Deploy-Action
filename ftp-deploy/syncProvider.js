@@ -126,8 +126,13 @@ class FTPSyncProvider {
                     }
                 }
             }
-            // navigate back to the root folder
-            yield this.upDir((_a = path.folders) === null || _a === void 0 ? void 0 : _a.length);
+            try {
+                // navigate back to the root folder
+                yield this.upDir((_a = path.folders) === null || _a === void 0 ? void 0 : _a.length);
+            }
+            catch (e) {
+                this.logger.all(`Error navigating up a folder when removing ${folderPath}`);
+            }
             this.logger.verbose(`  completed`);
         });
     }
