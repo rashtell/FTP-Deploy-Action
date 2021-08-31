@@ -93,3 +93,6 @@ typings/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# VS Code workspace settings
+.vscode
