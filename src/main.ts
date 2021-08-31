@@ -1,7 +1,7 @@
 import * as core from "@actions/core";
 // import { deploy } from "@samkirkland/ftp-deploy";
 import {deploy} from '../ftp-deploy/module';
-import { IFtpDeployArguments } from "@samkirkland/ftp-deploy/dist/types";
+import { IFtpDeployArguments } from "../ftp-deploy/types";
 import { optionalInt, optionalProtocol, optionalString, optionalBoolean, optionalStringArray, optionalLogLevel, optionalSecurity } from "./parse";
 
 async function runDeployment() {
