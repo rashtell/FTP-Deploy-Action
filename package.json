@@ -22,7 +22,7 @@
   "author": "Sam Kirkland",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.4.0",
+    "@actions/core": "^1.9.1",
     "@types/jest": "^26.0.23",
     "jest": "^27.0.5",
     "ts-jest": "^27.0.3",
